@@ -2,4 +2,6 @@
 /develop-eggs
 /eggs
 /parts
-
+/var
+/downloads
+.installed.cfg
