@@ -7,11 +7,11 @@ debug_mode = True
 # Folder where pid files, lock files and virtual frame buffer mappings
 # are stored. In this folder is necessary create a folder tmp, because this
 # folder is used to create all temporary documents.
-working_path = %(working_path)s
+working_path = ${working_path}
 # Folder where UNO library is installed
-uno_path = %(uno_path)s
+uno_path = ${uno_path}
 # Folder where soffice.bin is installed
-office_binary_path = %(office_binary_path)s
+office_binary_path = ${office_binary_path}
 #
 ## Monitor Settings
 #
@@ -29,12 +29,12 @@ limit_memory_used = 3000
 ## OOFactory Settings
 #
 # The pool consist of several OpenOffice.org instances
-application_hostname = %(ip)s
+application_hostname = ${ip}
 # OpenOffice Port
-openoffice_port = %(openoffice_port)s
-env-PATH = %(PATH)s
+openoffice_port = ${openoffice_port}
+env-PATH = ${PATH}
 # LD_LIBRARY_PATH passed to OpenOffice
-env-LD_LIBRARY_PATH = %(LD_LIBRARY_PATH)s
+env-LD_LIBRARY_PATH = ${LD_LIBRARY_PATH}
 
 #
 # Mimetype Registry
@@ -66,5 +66,5 @@ mimetype_registry =
 
 [server:main]
 use = egg:PasteScript#wsgiutils
-host = %(ip)s
-port = %(port)s
+host = ${ip}
+port = ${port}
