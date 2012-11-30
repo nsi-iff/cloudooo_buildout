@@ -42,6 +42,7 @@ env-LD_LIBRARY_PATH = ${LD_LIBRARY_PATH}
 # Priority matters, first match take precedence on next lines.
 mimetype_registry =
   application/pdf text/* pdf
+  application/postscript application/pdf pdf
   application/pdf * ooo
   video/* * ffmpeg
   audio/* * ffmpeg
